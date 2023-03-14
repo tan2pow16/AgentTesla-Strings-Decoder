@@ -1,0 +1,361 @@
+/*
+ * sig: System.String (System.Int32)
+ *
+ * loc[0] -> uint8*
+ * loc[1] -> uint8[]
+ * loc[2] -> int32
+ * loc[3] -> bool
+ * loc[4] -> string
+ * loc[5] -> void*
+ * loc[6] -> uint8& (pinned)
+ * loc[7] -> int32
+ * loc[8] -> bool
+ * loc[9] -> bool
+ * loc[10] -> int32
+ */
+0	0000	ldc.i4.0
+1	0001	stloc.s	V_10 (10)
+2	0003	br	343 (0247) br 3 (0008)
+3	0008	nop
+4	0009	ldloc.s	V_10 (10)
+5	000B	ldc.i4.s	0x18
+6	000D	ceq
+7	000F	brfalse.s	27 (002A) nop 
+8	0011	ldloc.1
+9	0012	ldloc.1
+10	0013	ldlen
+11	0014	conv.i4
+12	0015	ldc.i4.1
+13	0016	shr
+14	0017	ldelema	[mscorlib]System.Byte
+15	001C	dup
+16	001D	ldind.u1
+17	001E	ldloc.0
+18	001F	ldc.i4.4
+19	0020	add
+20	0021	ldind.i4
+21	0022	conv.u1
+22	0023	xor
+23	0024	conv.u1
+24	0025	stind.i1
+25	0026	ldc.i4.s	0x19
+26	0028	stloc.s	V_10 (10)
+27	002A	nop
+28	002B	ldloc.s	V_10 (10)
+29	002D	ldc.i4.s	0x19
+30	002F	ceq
+31	0031	brfalse.s	39 (0049) nop 
+32	0033	call	class [mscorlib]System.Text.Encoding [mscorlib]System.Text.Encoding::get_UTF8()
+33	0038	ldloc.1
+34	0039	callvirt	instance string [mscorlib]System.Text.Encoding::GetString(uint8[])
+35	003E	call	string [mscorlib]System.String::Intern(string)
+36	0043	stloc.s	V_4 (4)
+37	0045	ldc.i4.s	0x1A
+38	0047	stloc.s	V_10 (10)
+39	0049	nop
+40	004A	ldloc.s	V_10 (10)
+41	004C	ldc.i4.s	11
+42	004E	ceq
+43	0050	brfalse.s	51 (005C) nop 
+44	0052	nop
+45	0053	nop
+46	0054	ldc.i4.0
+47	0055	conv.u
+48	0056	stloc.s	V_6 (6)
+49	0058	ldc.i4.s	12
+50	005A	stloc.s	V_10 (10)
+51	005C	nop
+52	005D	ldloc.s	V_10 (10)
+53	005F	ldc.i4.2
+54	0060	ceq
+55	0062	brfalse.s	60 (006D) nop 
+56	0064	ldloc.3
+57	0065	brfalse	144 (00F1) ldsflda valuetype A.u/A A.u::bL
+58	006A	ldc.i4.3
+59	006B	stloc.s	V_10 (10)
+60	006D	nop
+61	006E	ldloc.s	V_10 (10)
+62	0070	ldc.i4.6
+63	0071	ceq
+64	0073	brfalse.s	74 (007F) nop 
+65	0075	ldloc.0
+66	0076	ldarg.0
+67	0077	ldloc.0
+68	0078	ldind.i4
+69	0079	xor
+70	007A	add
+71	007B	stloc.0
+72	007C	ldc.i4.7
+73	007D	stloc.s	V_10 (10)
+74	007F	nop
+75	0080	ldloc.s	V_10 (10)
+76	0082	ldc.i4.1
+77	0083	ceq
+78	0085	brfalse.s	88 (0093) nop 
+79	0087	nop
+80	0088	ldarg.0
+81	0089	ldc.i4.s	0x1F
+82	008B	shr
+83	008C	ldc.i4.0
+84	008D	cgt.un
+85	008F	stloc.3
+86	0090	ldc.i4.2
+87	0091	stloc.s	V_10 (10)
+88	0093	nop
+89	0094	ldloc.s	V_10 (10)
+90	0096	ldc.i4.s	17
+91	0098	ceq
+92	009A	brfalse.s	106 (00B0) nop 
+93	009C	ldloc.1
+94	009D	ldloc.s	V_7 (7)
+95	009F	ldelema	[mscorlib]System.Byte
+96	00A4	dup
+97	00A5	ldind.u1
+98	00A6	ldloc.1
+99	00A7	ldloc.2
+100	00A8	ldelem.u1
+101	00A9	xor
+102	00AA	conv.u1
+103	00AB	stind.i1
+104	00AC	ldc.i4.s	18
+105	00AE	stloc.s	V_10 (10)
+106	00B0	nop
+107	00B1	ldloc.s	V_10 (10)
+108	00B3	ldc.i4.8
+109	00B4	ceq
+110	00B6	brfalse.s	117 (00C5) nop 
+111	00B8	ldloc.1
+112	00B9	ldc.i4.0
+113	00BA	ldelema	[mscorlib]System.Byte
+114	00BF	stloc.s	V_6 (6)
+115	00C1	ldc.i4.s	9
+116	00C3	stloc.s	V_10 (10)
+117	00C5	nop
+118	00C6	ldloc.s	V_10 (10)
+119	00C8	ldc.i4.7
+120	00C9	ceq
+121	00CB	brfalse.s	128 (00D8) nop 
+122	00CD	ldloc.0
+123	00CE	ldind.i4
+124	00CF	newarr	[mscorlib]System.Byte
+125	00D4	stloc.1
+126	00D5	ldc.i4.8
+127	00D6	stloc.s	V_10 (10)
+128	00D8	nop
+129	00D9	ldloc.s	V_10 (10)
+130	00DB	ldc.i4.s	19
+131	00DD	ceq
+132	00DF	brfalse.s	139 (00E9) nop 
+133	00E1	ldloc.2
+134	00E2	ldc.i4.1
+135	00E3	sub
+136	00E4	stloc.2
+137	00E5	ldc.i4.s	20
+138	00E7	stloc.s	V_10 (10)
+139	00E9	nop
+140	00EA	ldloc.s	V_10 (10)
+141	00EC	ldc.i4.5
+142	00ED	ceq
+143	00EF	brfalse.s	149 (00FB) nop 
+144	00F1	ldsflda	valuetype A.u/A A.u::bL
+145	00F6	conv.i
+146	00F7	stloc.0
+147	00F8	ldc.i4.6
+148	00F9	stloc.s	V_10 (10)
+149	00FB	nop
+150	00FC	ldloc.s	V_10 (10)
+151	00FE	ldc.i4.4
+152	00FF	ceq
+153	0101	brfalse.s	157 (010B) nop 
+154	0103	br	344 (024C) ldloc.s V_4 (4)
+155	0108	ldc.i4.5
+156	0109	stloc.s	V_10 (10)
+157	010B	nop
+158	010C	ldloc.s	V_10 (10)
+159	010E	ldc.i4.s	15
+160	0110	ceq
+161	0112	brfalse.s	176 (0129) nop 
+162	0114	nop
+163	0115	ldloc.1
+164	0116	ldloc.s	V_7 (7)
+165	0118	ldelema	[mscorlib]System.Byte
+166	011D	dup
+167	011E	ldind.u1
+168	011F	ldloc.1
+169	0120	ldloc.2
+170	0121	ldelem.u1
+171	0122	xor
+172	0123	conv.u1
+173	0124	stind.i1
+174	0125	ldc.i4.s	16
+175	0127	stloc.s	V_10 (10)
+176	0129	nop
+177	012A	ldloc.s	V_10 (10)
+178	012C	ldc.i4.s	16
+179	012E	ceq
+180	0130	brfalse.s	200 (014C) nop 
+181	0132	ldloc.1
+182	0133	ldloc.2
+183	0134	ldelema	[mscorlib]System.Byte
+184	0139	dup
+185	013A	ldind.u1
+186	013B	ldloc.1
+187	013C	ldloc.s	V_7 (7)
+188	013E	ldelem.u1
+189	013F	ldloc.0
+190	0140	ldc.i4.4
+191	0141	add
+192	0142	ldind.i4
+193	0143	xor
+194	0144	conv.u1
+195	0145	xor
+196	0146	conv.u1
+197	0147	stind.i1
+198	0148	ldc.i4.s	17
+199	014A	stloc.s	V_10 (10)
+200	014C	nop
+201	014D	ldloc.s	V_10 (10)
+202	014F	ldc.i4.s	9
+203	0151	ceq
+204	0153	brfalse.s	210 (015E) nop 
+205	0155	ldloc.s	V_6 (6)
+206	0157	conv.u
+207	0158	stloc.s	V_5 (5)
+208	015A	ldc.i4.s	10
+209	015C	stloc.s	V_10 (10)
+210	015E	nop
+211	015F	ldloc.s	V_10 (10)
+212	0161	ldc.i4.s	0x16
+213	0163	ceq
+214	0165	brfalse.s	225 (0175) nop 
+215	0167	ldloc.1
+216	0168	ldlen
+217	0169	conv.i4
+218	016A	ldc.i4.2
+219	016B	rem
+220	016C	ldc.i4.0
+221	016D	cgt.un
+222	016F	stloc.s	V_9 (9)
+223	0171	ldc.i4.s	0x17
+224	0173	stloc.s	V_10 (10)
+225	0175	nop
+226	0176	ldloc.s	V_10 (10)
+227	0178	ldc.i4.s	13
+228	017A	ceq
+229	017C	brfalse.s	234 (0185) nop 
+230	017E	ldc.i4.0
+231	017F	stloc.s	V_7 (7)
+232	0181	ldc.i4.s	14
+233	0183	stloc.s	V_10 (10)
+234	0185	nop
+235	0186	ldloc.s	V_10 (10)
+236	0188	ldc.i4.s	0x15
+237	018A	ceq
+238	018C	brfalse.s	243 (0199) nop 
+239	018E	ldloc.s	V_8 (8)
+240	0190	brtrue	162 (0114) nop 
+241	0195	ldc.i4.s	0x16
+242	0197	stloc.s	V_10 (10)
+243	0199	nop
+244	019A	ldloc.s	V_10 (10)
+245	019C	ldc.i4.s	18
+246	019E	ceq
+247	01A0	brfalse.s	255 (01AD) nop 
+248	01A2	nop
+249	01A3	ldloc.s	V_7 (7)
+250	01A5	ldc.i4.1
+251	01A6	add
+252	01A7	stloc.s	V_7 (7)
+253	01A9	ldc.i4.s	19
+254	01AB	stloc.s	V_10 (10)
+255	01AD	nop
+256	01AE	ldloc.s	V_10 (10)
+257	01B0	ldc.i4.s	10
+258	01B2	ceq
+259	01B4	brfalse.s	271 (01C5) nop 
+260	01B6	nop
+261	01B7	ldloc.s	V_5 (5)
+262	01B9	ldloc.0
+263	01BA	ldc.i4.8
+264	01BB	add
+265	01BC	ldloc.1
+266	01BD	ldlen
+267	01BE	conv.i4
+268	01BF	cpblk
+269	01C1	ldc.i4.s	11
+270	01C3	stloc.s	V_10 (10)
+271	01C5	nop
+272	01C6	ldloc.s	V_10 (10)
+273	01C8	ldc.i4.s	12
+274	01CA	ceq
+275	01CC	brfalse.s	284 (01D8) nop 
+276	01CE	ldloc.1
+277	01CF	ldlen
+278	01D0	conv.i4
+279	01D1	ldc.i4.1
+280	01D2	sub
+281	01D3	stloc.2
+282	01D4	ldc.i4.s	13
+283	01D6	stloc.s	V_10 (10)
+284	01D8	nop
+285	01D9	ldloc.s	V_10 (10)
+286	01DB	ldc.i4.s	20
+287	01DD	ceq
+288	01DF	brfalse.s	295 (01EC) nop 
+289	01E1	ldloc.s	V_7 (7)
+290	01E3	ldloc.2
+291	01E4	clt
+292	01E6	stloc.s	V_8 (8)
+293	01E8	ldc.i4.s	0x15
+294	01EA	stloc.s	V_10 (10)
+295	01EC	nop
+296	01ED	ldloc.s	V_10 (10)
+297	01EF	ldc.i4.s	14
+298	01F1	ceq
+299	01F3	brfalse.s	303 (01FB) nop 
+300	01F5	br.s	289 (01E1) ldloc.s V_7 (7)
+301	01F7	ldc.i4.s	15
+302	01F9	stloc.s	V_10 (10)
+303	01FB	nop
+304	01FC	ldloc.s	V_10 (10)
+305	01FE	ldc.i4.s	0x1A
+306	0200	ceq
+307	0202	brfalse.s	311 (020A) nop 
+308	0204	br.s	344 (024C) ldloc.s V_4 (4)
+309	0206	ldc.i4.s	0x1B
+310	0208	stloc.s	V_10 (10)
+311	020A	nop
+312	020B	ldloc.s	V_10 (10)
+313	020D	ldc.i4.s	0x17
+314	020F	ceq
+315	0211	brfalse.s	320 (021E) nop 
+316	0213	ldloc.s	V_9 (9)
+317	0215	brfalse	32 (0033) call class [mscorlib]System.Text.Encoding [mscorlib]System.Text.Encoding::get_UTF8()
+318	021A	ldc.i4.s	0x18
+319	021C	stloc.s	V_10 (10)
+320	021E	nop
+321	021F	ldloc.s	V_10 (10)
+322	0221	ldc.i4.3
+323	0222	ceq
+324	0224	brfalse.s	329 (0230) nop 
+325	0226	ldsfld	string [mscorlib]System.String::Empty
+326	022B	stloc.s	V_4 (4)
+327	022D	ldc.i4.4
+328	022E	stloc.s	V_10 (10)
+329	0230	nop
+330	0231	ldloc.s	V_10 (10)
+331	0233	ldc.i4.0
+332	0234	ceq
+333	0236	brfalse.s	337 (023C) nop 
+334	0238	nop
+335	0239	ldc.i4.1
+336	023A	stloc.s	V_10 (10)
+337	023C	nop
+338	023D	ldloc.s	V_10 (10)
+339	023F	ldc.i4.s	0x1B
+340	0241	ceq
+341	0243	brfalse.s	343 (0247) br 3 (0008)
+342	0245	br.s	344 (024C) ldloc.s V_4 (4)
+343	0247	br	3 (0008) nop 
+344	024C	ldloc.s	V_4 (4)
+345	024E	ret
